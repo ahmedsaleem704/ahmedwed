@@ -13,8 +13,8 @@ export const couple = {
   hashtag: "#AhmedWedsAqsa",
   heroImage: coupleHero,
   /** Main wedding ceremony date & time (local). */
-  weddingDate: "2026-12-11T19:30:00+05:30",
-  weddingDateLabel: "11 December 2026",
+  weddingDate: "2026-10-02T19:30:00+05:30",
+  weddingDateLabel: "2 October 2026",
 };
 
 export const brand = {
@@ -40,7 +40,7 @@ export const events: WeddingEvent[] = [
   {
     id: "haldi",
     name: "Haldi",
-    date: "9 December 2026",
+    date: "30 September 2026",
     time: "10:00 AM",
     venue: "Aqsa's Residence, Jaipur",
     description:
@@ -53,7 +53,7 @@ export const events: WeddingEvent[] = [
   {
     id: "mehendi",
     name: "Mehendi",
-    date: "9 December 2026",
+    date: "30 September 2026",
     time: "5:00 PM",
     venue: "The Courtyard Lawn, Rambagh Gardens",
     description:
@@ -66,7 +66,7 @@ export const events: WeddingEvent[] = [
   {
     id: "sangeet",
     name: "Sangeet",
-    date: "10 December 2026",
+    date: "1 October 2026",
     time: "8:00 PM",
     venue: "Grand Ballroom, Rambagh Heritage Palace",
     description:
@@ -79,7 +79,7 @@ export const events: WeddingEvent[] = [
   {
     id: "wedding",
     name: "Wedding",
-    date: "11 December 2026",
+    date: "2 October 2026",
     time: "7:30 PM",
     venue: "Mandap Lawns, Rambagh Heritage Palace",
     description:
@@ -92,7 +92,7 @@ export const events: WeddingEvent[] = [
   {
     id: "reception",
     name: "Reception",
-    date: "12 December 2026",
+    date: "3 October 2026",
     time: "7:00 PM",
     venue: "Chandelier Hall, Rambagh Heritage Palace",
     description:
@@ -106,31 +106,25 @@ export const events: WeddingEvent[] = [
 
 export const loveStory = [
   {
-    date: "March 2019",
+    date: "June 2017",
     title: "First Meet",
     text: "A crowded Jaipur wedding, a spilled cup of chai, and an apology that lasted three hours.",
     image: mehendiImg,
   },
   {
-    date: "July 2019",
+    date: "June 2017",
     title: "First Date",
     text: "Kulfi on Nahargarh Road while the monsoon decided to join them, uninvited.",
     image: sangeetImg,
   },
   {
-    date: "February 2021",
-    title: "Falling in Love",
-    text: "Two cities, endless voice notes, and one shared playlist that said everything.",
-    image: haldiImg,
-  },
-  {
-    date: "December 2025",
+    date: "April 2025",
     title: "The Proposal",
     text: "A rooftop full of diyas, a hidden ring box, and a yes before the question ended.",
     image: receptionImg,
   },
   {
-    date: "December 2026",
+    date: "October 2026",
     title: "Forever Begins",
     text: "And now, surrounded by everyone they love, the pheras that make it forever.",
     image: weddingImg,
@@ -151,10 +145,10 @@ export const venue = {
   name: "Rambagh Heritage Palace",
   address: "Bhawani Singh Road, Rambagh, Jaipur, Rajasthan 302005, India",
   image: venueImg,
-  dateTime: "11 December 2026 · 7:30 PM onwards",
+  dateTime: "2 October 2026 · 7:30 PM onwards",
   mapEmbed:
     "https://www.google.com/maps?q=Rambagh+Palace+Jaipur&output=embed",
-  directions: "https://www.google.com/maps/dir/?api=1&destination=Rambagh+Palace+Jaipur",
+  directions: "https://maps.app.goo.gl/3Pf4HWgo6Xo2k9tm6",
 };
 
 export const families = {
@@ -191,7 +185,6 @@ export const faqs = [
   { q: "What should I wear?", a: "Each function has its own colour story — see the Dress Code section for guidance." },
   { q: "Can I bring additional guests?", a: "Your invitation lists the number of seats reserved for you. Do mention extra guests in your RSVP and we'll do our best." },
   { q: "Are children welcome?", a: "Absolutely. There is a supervised play corner and a kids' menu at every function." },
-  { q: "What meal options are available?", a: "Vegetarian, non-vegetarian, vegan and Jain menus are served at all events." },
   { q: "Where can I stay?", a: "See Travel & Stay for hotels with negotiated wedding rates near the palace." },
-  { q: "How do I RSVP?", a: "Fill in the RSVP form on this page, ideally before 15 November 2026." },
+  { q: "How do I RSVP?", a: "Fill in the RSVP form on this page, ideally before 1 September 2026." },
 ];
