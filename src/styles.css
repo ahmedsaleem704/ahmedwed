@@ -255,6 +255,11 @@
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
+@utility bg-gold-gradient {
+  background-image: var(--gradient-gold);
+  color: var(--primary-foreground);
+}
+
 @utility reveal {
   opacity: 0;
   transform: translateY(28px);
