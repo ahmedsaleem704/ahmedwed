@@ -32,7 +32,7 @@ export function Venue() {
                 href={venue.directions}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--gradient-gold)] px-6 py-3 text-sm font-medium text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-105"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-sm font-medium text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-105"
               >
                 <Navigation className="h-4 w-4" />
                 Get Directions

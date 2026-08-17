@@ -18,7 +18,7 @@ function FamilyColumn({ title, members }: { title: string; members: typeof famil
         {members.map((m, i) => (
           <Reveal key={m.name} delay={i * 70}>
             <article className="glass flex items-center gap-4 rounded-3xl p-5 lift">
-              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--gradient-gold)] text-lg font-medium text-primary-foreground">
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gold-gradient text-lg font-medium text-primary-foreground">
                 {initials(m.name)}
               </span>
               <div>

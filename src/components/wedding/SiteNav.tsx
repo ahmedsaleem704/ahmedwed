@@ -52,7 +52,7 @@ export function SiteNav() {
 
         <a
           href="#rsvp"
-          className="hidden rounded-full border border-gold/60 bg-[var(--gradient-gold)] px-5 py-2 text-sm font-medium text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-105 lg:inline-flex"
+          className="hidden rounded-full border border-gold/60 bg-gold-gradient px-5 py-2 text-sm font-medium text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-105 lg:inline-flex"
         >
           RSVP
         </a>

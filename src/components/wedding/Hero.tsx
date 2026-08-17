@@ -37,7 +37,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
             <a
               href="#story"
-              className="rounded-full bg-[var(--gradient-gold)] px-7 py-3 text-sm font-medium tracking-wide text-primary-foreground shadow-[var(--shadow-float)] transition-transform hover:scale-105 active:scale-95"
+              className="rounded-full bg-gold-gradient px-7 py-3 text-sm font-medium tracking-wide text-primary-foreground shadow-[var(--shadow-float)] transition-transform hover:scale-105 active:scale-95"
             >
               Explore Our Story
             </a>
@@ -57,7 +57,7 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-md">
-          <div className="absolute inset-6 rounded-full bg-[var(--gradient-gold)] opacity-25 blur-3xl" />
+          <div className="absolute inset-6 rounded-full bg-gold-gradient opacity-25 blur-3xl" />
           <img
             src={couple.heroImage}
             alt={`Illustration of ${couple.groom} and ${couple.bride} in Indian wedding attire`}

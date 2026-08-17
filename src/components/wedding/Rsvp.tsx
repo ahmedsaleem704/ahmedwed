@@ -127,7 +127,7 @@ export function Rsvp() {
               <button
                 type="submit"
                 disabled={state === "loading"}
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-gold)] px-8 py-3.5 text-sm font-medium text-primary-foreground shadow-[var(--shadow-float)] transition-transform hover:scale-[1.02] active:scale-95 disabled:opacity-70"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gold-gradient px-8 py-3.5 text-sm font-medium text-primary-foreground shadow-[var(--shadow-float)] transition-transform hover:scale-[1.02] active:scale-95 disabled:opacity-70"
               >
                 {state === "loading" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Heart className="h-4 w-4" fill="currentColor" />}
                 {state === "loading" ? "Sending…" : "Send my RSVP"}

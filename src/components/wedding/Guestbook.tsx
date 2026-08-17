@@ -77,7 +77,7 @@ export function Guestbook() {
                     onClick={() => setEmoji(em)}
                     className={cn(
                       "h-11 w-11 rounded-full text-lg transition-transform hover:scale-110",
-                      emoji === em ? "bg-[var(--gradient-gold)] scale-110" : "bg-white/60",
+                      emoji === em ? "bg-gold-gradient scale-110" : "bg-white/60",
                     )}
                   >
                     {em}
@@ -88,7 +88,7 @@ export function Guestbook() {
             {error ? <p className="text-xs text-destructive">{error}</p> : null}
             <button
               type="submit"
-              className="rounded-full bg-[var(--gradient-gold)] px-6 py-3 text-sm font-medium text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-[1.02] active:scale-95"
+              className="rounded-full bg-gold-gradient px-6 py-3 text-sm font-medium text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-[1.02] active:scale-95"
             >
               Sign the guestbook
             </button>

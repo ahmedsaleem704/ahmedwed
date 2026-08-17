@@ -47,7 +47,7 @@ export function ThankYou() {
         <button
           type="button"
           onClick={share}
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[var(--gradient-gold)] px-7 py-3 text-sm font-medium text-primary-foreground shadow-[var(--shadow-float)] transition-transform hover:scale-105 active:scale-95"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold-gradient px-7 py-3 text-sm font-medium text-primary-foreground shadow-[var(--shadow-float)] transition-transform hover:scale-105 active:scale-95"
         >
           {shared ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
           {shared ? "Link copied!" : "Share the Love"}

@@ -17,7 +17,7 @@ export function LoveStory() {
         <span className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent md:left-1/2" />
         {loveStory.map((m, i) => (
           <Reveal as="li" key={m.title} delay={i * 60} className="relative mb-10 pl-12 md:pl-0">
-            <span className="absolute left-[0.55rem] top-8 z-10 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--gradient-gold)] ring-4 ring-background md:left-1/2 md:-translate-x-1/2">
+            <span className="absolute left-[0.55rem] top-8 z-10 flex h-4 w-4 items-center justify-center rounded-full bg-gold-gradient ring-4 ring-background md:left-1/2 md:-translate-x-1/2">
               <Heart className="h-2 w-2 text-primary-foreground" fill="currentColor" />
             </span>
             <div

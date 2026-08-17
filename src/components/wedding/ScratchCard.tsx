@@ -134,7 +134,7 @@ export function ScratchCard() {
             <div className="flex-1 min-w-40">
               <div className="h-2 overflow-hidden rounded-full bg-secondary">
                 <div
-                  className="h-full rounded-full bg-[var(--gradient-gold)] transition-[width] duration-300"
+                  className="h-full rounded-full bg-gold-gradient transition-[width] duration-300"
                   style={{ width: `${percent}%` }}
                 />
               </div>

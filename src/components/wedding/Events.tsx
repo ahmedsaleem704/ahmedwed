@@ -75,7 +75,7 @@ export function Events() {
                     className={cn(
                       "flex h-12 w-12 items-center justify-center rounded-full border transition-all duration-300",
                       isActive
-                        ? "scale-110 border-gold bg-[var(--gradient-gold)] text-primary-foreground shadow-[var(--shadow-float)]"
+                        ? "scale-110 border-gold bg-gold-gradient text-primary-foreground shadow-[var(--shadow-float)]"
                         : "border-border bg-card text-gold-deep hover:scale-105",
                     )}
                   >
@@ -106,7 +106,7 @@ export function Events() {
       <ol className="relative mx-auto mt-12 max-w-xl space-y-6 border-l border-gold/40 pl-6 md:hidden">
         {events.map((e, i) => (
           <Reveal as="li" key={e.id} delay={i * 60} className="relative">
-            <span className="absolute -left-[1.9rem] top-6 h-3 w-3 rounded-full bg-[var(--gradient-gold)] ring-4 ring-background" />
+            <span className="absolute -left-[1.9rem] top-6 h-3 w-3 rounded-full bg-gold-gradient ring-4 ring-background" />
             <div className="glass rounded-3xl p-5">
               <EventDetails e={e} />
             </div>
