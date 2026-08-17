@@ -18,9 +18,9 @@ import { Guestbook } from "@/components/wedding/Guestbook";
 import { ThankYou } from "@/components/wedding/ThankYou";
 import { couple, venue } from "@/data/wedding";
 
-const title = "Vijay & Rashima — Wedding Invitation | Theplanify";
+const title = "Ahmed & Aqsa — Wedding Invitation | Theplanify";
 const description =
-  "Join Vijay & Rashima in Jaipur this December. Events, love story, gallery, RSVP, venue and travel details — by Theplanify, India's trusted event planning platform.";
+  "Join Ahmed & Aqsa in Jaipur this October. Events, love story, gallery, RSVP, venue and travel details — by Theplanify, India's trusted event planning platform.";
 
 export const Route = createFileRoute("/")({
   component: Index,

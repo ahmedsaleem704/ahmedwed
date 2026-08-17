@@ -29,7 +29,7 @@ export function LoveStory() {
               <div className="glass overflow-hidden rounded-3xl lift">
                 <img
                   src={m.image}
-                  alt={`${m.title} — illustration of Vijay and Rashima`}
+                  alt={`${m.title} — illustration of Ahmed and Aqsa`}
                   loading="lazy"
                   className="h-44 w-full bg-white/50 object-contain p-3"
                 />

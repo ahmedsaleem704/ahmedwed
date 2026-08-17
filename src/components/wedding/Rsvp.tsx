@@ -3,7 +3,7 @@ import { Heart, Loader2, CheckCircle2 } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
 import { cn } from "@/lib/utils";
 
-type Errors = Partial<Record<"name" | "phone" | "guests" | "attendance" | "meal", string>>;
+type Errors = Partial<Record<"name" | "phone" | "guests" | "attendance", string>>;
 
 const field =
   "w-full rounded-2xl border border-border/70 bg-white/70 px-4 py-3 text-sm text-foreground outline-none transition-shadow placeholder:text-muted-foreground/70 focus:border-gold focus:ring-2 focus:ring-gold/40";
@@ -23,7 +23,6 @@ export function Rsvp() {
     if (!/^[+\d][\d\s-]{7,15}$/.test(phone)) next.phone = "Enter a valid phone number.";
     if (!guests || guests < 1 || guests > 12) next.guests = "Between 1 and 12 guests, please.";
     if (!fd.get("attendance")) next.attendance = "Let us know if you can make it.";
-    if (!fd.get("meal")) next.meal = "Pick a meal preference.";
     setErrors(next);
     if (Object.keys(next).length) return;
 
@@ -36,7 +35,7 @@ export function Rsvp() {
       <SectionHeading
         eyebrow="Will you join us?"
         title="RSVP"
-        subtitle="We can't wait to celebrate with you! Kindly respond before 15 November 2026."
+        subtitle="We can't wait to celebrate with you! Kindly respond before 1 September 2026."
       />
 
       <Reveal className="mx-auto mt-12 max-w-2xl">
@@ -76,28 +75,13 @@ export function Rsvp() {
                 </div>
               </div>
 
-              <div className="grid gap-5 sm:grid-cols-2">
+              <div className="grid gap-5">
                 <div>
                   <label htmlFor="rsvp-guests" className="mb-1.5 block text-sm text-foreground">
                     Number of guests
                   </label>
                   <input id="rsvp-guests" name="guests" type="number" min={1} max={12} defaultValue={1} className={field} aria-invalid={!!errors.guests} />
                   {errors.guests ? <p className="mt-1 text-xs text-destructive">{errors.guests}</p> : null}
-                </div>
-                <div>
-                  <label htmlFor="rsvp-meal" className="mb-1.5 block text-sm text-foreground">
-                    Meal preference
-                  </label>
-                  <select id="rsvp-meal" name="meal" defaultValue="" className={field} aria-invalid={!!errors.meal}>
-                    <option value="" disabled>
-                      Choose one
-                    </option>
-                    <option>Vegetarian</option>
-                    <option>Non-Vegetarian</option>
-                    <option>Vegan</option>
-                    <option>Other</option>
-                  </select>
-                  {errors.meal ? <p className="mt-1 text-xs text-destructive">{errors.meal}</p> : null}
                 </div>
               </div>
 
