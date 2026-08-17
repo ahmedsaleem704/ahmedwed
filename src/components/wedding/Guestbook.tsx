@@ -63,7 +63,7 @@ export function Guestbook() {
                 name="message"
                 rows={4}
                 className="w-full resize-y rounded-2xl border border-border/70 bg-white/70 px-4 py-3 text-sm outline-none focus:border-gold focus:ring-2 focus:ring-gold/40"
-                placeholder="Your wishes for Vijay & Rashima…"
+                placeholder="Your wishes for Ahmed & Aqsa…"
               />
             </div>
             <fieldset>

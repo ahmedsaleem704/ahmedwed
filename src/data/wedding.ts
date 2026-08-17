@@ -7,10 +7,10 @@ import coupleHero from "@/assets/couple-hero.png";
 import venueImg from "@/assets/venue.jpg";
 
 export const couple = {
-  bride: "Rashima",
-  groom: "Vijay",
+  bride: "Aqsa",
+  groom: "Ahmed",
   tagline: "Two Hearts. One Beautiful Beginning.",
-  hashtag: "#VijayWedsRashima",
+  hashtag: "#AhmedWedsAqsa",
   heroImage: coupleHero,
   /** Main wedding ceremony date & time (local). */
   weddingDate: "2026-12-11T19:30:00+05:30",
@@ -42,7 +42,7 @@ export const events: WeddingEvent[] = [
     name: "Haldi",
     date: "9 December 2026",
     time: "10:00 AM",
-    venue: "Rashima's Residence, Jaipur",
+    venue: "Aqsa's Residence, Jaipur",
     description:
       "A sunlit morning of turmeric, marigolds and laughter as blessings are showered on the couple.",
     image: haldiImg,
@@ -138,13 +138,13 @@ export const loveStory = [
 ];
 
 export const gallery = [
-  { src: coupleHero, alt: "Vijay and Rashima illustrated in blush and cream wedding attire", span: "tall" },
+  { src: coupleHero, alt: "Ahmed and Aqsa illustrated in blush and cream wedding attire", span: "tall" },
   { src: haldiImg, alt: "The couple at their Haldi ceremony surrounded by marigolds", span: "short" },
   { src: venueImg, alt: "Rambagh Heritage Palace decorated with a floral mandap at dusk", span: "wide" },
   { src: mehendiImg, alt: "The couple in green outfits during the Mehendi celebration", span: "tall" },
-  { src: sangeetImg, alt: "Vijay and Rashima dancing at the Sangeet night", span: "short" },
+  { src: sangeetImg, alt: "Ahmed and Aqsa dancing at the Sangeet night", span: "short" },
   { src: receptionImg, alt: "The couple dressed in formal attire for the reception", span: "tall" },
-  { src: weddingImg, alt: "Vijay and Rashima at the wedding mandap in red and gold", span: "short" },
+  { src: weddingImg, alt: "Ahmed and Aqsa at the wedding mandap in red and gold", span: "short" },
 ];
 
 export const venue = {

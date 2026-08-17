@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Vijay & Rashima — Wedding | Theplanify" },
+      { title: "Ahmed & Aqsa — Wedding | Theplanify" },
       {
         name: "description",
         content:
-          "The wedding of Vijay & Rashima, Jaipur, December 2026. Planned by Theplanify.",
+          "The wedding of Ahmed & Aqsa, Jaipur, December 2026. Planned by Theplanify.",
       },
       { property: "og:site_name", content: "Theplanify" },
       { property: "og:type", content: "website" },
