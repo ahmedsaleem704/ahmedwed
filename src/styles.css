@@ -148,3 +148,204 @@
     color: var(--color-foreground);
   }
 }
+
+/* ---------------- Theplanify wedding design system ---------------- */
+
+:root {
+  --radius: 1.5rem;
+
+  --blush: oklch(0.9 0.045 12);
+  --lavender: oklch(0.9 0.045 300);
+  --peach: oklch(0.93 0.05 55);
+  --beige: oklch(0.96 0.015 80);
+  --gold: oklch(0.79 0.09 85);
+  --gold-deep: oklch(0.66 0.1 78);
+  --rose-ink: oklch(0.36 0.07 10);
+
+  --background: oklch(0.985 0.008 60);
+  --foreground: oklch(0.32 0.045 12);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.32 0.045 12);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.32 0.045 12);
+  --primary: oklch(0.68 0.13 12);
+  --primary-foreground: oklch(0.99 0.005 60);
+  --secondary: oklch(0.94 0.035 300);
+  --secondary-foreground: oklch(0.36 0.06 300);
+  --muted: oklch(0.96 0.015 60);
+  --muted-foreground: oklch(0.53 0.035 20);
+  --accent: oklch(0.93 0.05 55);
+  --accent-foreground: oklch(0.36 0.07 30);
+  --destructive: oklch(0.6 0.2 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0.025 40);
+  --input: oklch(0.9 0.025 40);
+  --ring: oklch(0.79 0.09 85);
+
+  --gradient-romance: linear-gradient(
+    135deg,
+    oklch(0.97 0.03 20) 0%,
+    oklch(0.96 0.03 330) 35%,
+    oklch(0.97 0.035 60) 70%,
+    oklch(0.98 0.02 90) 100%
+  );
+  --gradient-gold: linear-gradient(100deg, var(--gold-deep), var(--gold), oklch(0.92 0.06 92));
+  --shadow-soft: 0 18px 45px -22px oklch(0.55 0.1 15 / 0.45);
+  --shadow-float: 0 30px 70px -30px oklch(0.5 0.12 15 / 0.5);
+  --glass-bg: oklch(1 0 0 / 0.55);
+  --glass-border: oklch(1 0 0 / 0.7);
+}
+
+@theme inline {
+  --color-blush: var(--blush);
+  --color-lavender: var(--lavender);
+  --color-peach: var(--peach);
+  --color-beige: var(--beige);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-rose-ink: var(--rose-ink);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-image: var(--gradient-romance);
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: var(--shadow-soft);
+}
+
+@utility glass-strong {
+  background: oklch(1 0 0 / 0.75);
+  border: 1px solid oklch(1 0 0 / 0.85);
+  backdrop-filter: blur(26px) saturate(160%);
+  box-shadow: var(--shadow-float);
+}
+
+@utility text-gold {
+  background: var(--gradient-gold);
+  background-clip: text;
+  color: transparent;
+}
+
+@utility script {
+  font-family: var(--font-script);
+}
+
+@utility gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility lift {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-float);
+  }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.15);
+    opacity: 0;
+  }
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(1.5deg);
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@utility animate-float-up {
+  animation: float-up linear infinite;
+}
+@utility animate-twinkle {
+  animation: twinkle 3.2s ease-in-out infinite;
+}
+@utility animate-sway {
+  animation: sway 6s ease-in-out infinite;
+}
+@utility animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
