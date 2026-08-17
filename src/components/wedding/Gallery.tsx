@@ -93,8 +93,8 @@ export function Gallery() {
             <ChevronLeft className="h-5 w-5" />
           </button>
           <img
-            src={gallery[open].src}
-            alt={gallery[open].alt}
+            src={gallery[open]!.src}
+            alt={gallery[open]!.alt}
             onClick={(e) => e.stopPropagation()}
             className="max-h-[82vh] max-w-full rounded-3xl bg-card object-contain shadow-[var(--shadow-float)] animate-in zoom-in-95"
           />

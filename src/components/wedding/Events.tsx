@@ -47,8 +47,8 @@ function EventDetails({ e }: { e: WeddingEvent }) {
 }
 
 export function Events() {
-  const [active, setActive] = useState(events[3].id);
-  const activeEvent = events.find((e) => e.id === active) ?? events[0];
+  const [active, setActive] = useState(events[3]!.id);
+  const activeEvent = events.find((e) => e.id === active) ?? events[0]!;
 
   return (
     <section id="events" className="relative px-4 py-20 sm:px-6">
