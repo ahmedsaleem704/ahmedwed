@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "The wedding of Ahmed & Aqsa, Jaipur, December 2026. Planned by Theplanify.",
+          "The wedding of Ahmed & Aqsa, Jaipur, October 2026. Planned by Theplanify.",
       },
       { property: "og:site_name", content: "Theplanify" },
       { property: "og:type", content: "website" },
