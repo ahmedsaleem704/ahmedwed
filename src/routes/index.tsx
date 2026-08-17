@@ -66,7 +66,6 @@ function Index() {
       <Ambience />
       <SiteNav />
       <main className="relative z-10">
-        <h1 className="sr-only">Vijay and Rashima's wedding — Jaipur, December 2026</h1>
         <Hero />
         <Countdown />
         <LoveStory />
