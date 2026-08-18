@@ -7,9 +7,9 @@ type Entry = { id: number; name: string; message: string; emoji: string };
 const emojis = ["❤️", "🌸", "✨", "🎉", "🙏", "💍"];
 
 const seed: Entry[] = [
-  { id: 1, name: "Neha & Karan", message: "So happy for you both. Jaipur is about to glow!", emoji: "✨" },
+  { id: 1, name: "Neha & Karan", message: "So happy for you both. Islamabad is about to glow!", emoji: "✨" },
   { id: 2, name: "Uncle Prakash", message: "Blessings for a lifetime of laughter and good food.", emoji: "🙏" },
-  { id: 3, name: "Team Theplanify", message: "Planning this one has been pure joy. Congratulations!", emoji: "🎉" },
+  { id: 3, name: "Auntie Saira", message: "Wishing you both a beautiful new chapter together.", emoji: "🎉" },
 ];
 
 export function Guestbook() {

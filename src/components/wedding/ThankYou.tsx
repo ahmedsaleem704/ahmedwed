@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Share2, Check } from "lucide-react";
-import { brand, couple } from "@/data/wedding";
+import { couple } from "@/data/wedding";
 import { Reveal, FloralCorner } from "./primitives";
 
 export function ThankYou() {
@@ -52,12 +52,6 @@ export function ThankYou() {
           {shared ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
           {shared ? "Link copied!" : "Share the Love"}
         </button>
-
-        <div className="mt-12 text-xs text-muted-foreground">
-          <p className="text-sm text-foreground">{brand.name}</p>
-          <p>{brand.descriptor}</p>
-          <p className="mt-1 tracking-[0.3em] uppercase text-gold-deep">{brand.status}</p>
-        </div>
       </Reveal>
     </footer>
   );

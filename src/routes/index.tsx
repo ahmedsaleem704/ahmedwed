@@ -11,16 +11,14 @@ import { Rsvp } from "@/components/wedding/Rsvp";
 import { Venue } from "@/components/wedding/Venue";
 import { Family } from "@/components/wedding/Family";
 import { Hashtag } from "@/components/wedding/Hashtag";
-import { DressCode } from "@/components/wedding/DressCode";
-import { Travel } from "@/components/wedding/Travel";
 import { Faqs } from "@/components/wedding/Faqs";
 import { Guestbook } from "@/components/wedding/Guestbook";
 import { ThankYou } from "@/components/wedding/ThankYou";
 import { couple, venue } from "@/data/wedding";
 
-const title = "Ahmed & Aqsa — Wedding Invitation | Theplanify";
+const title = "Ahmed & Aqsa — Wedding Invitation | 2 November 2026";
 const description =
-  "Join Ahmed & Aqsa in Jaipur this October. Events, love story, gallery, RSVP, venue and travel details — by Theplanify, India's trusted event planning platform.";
+  "Join Ahmed & Aqsa in Islamabad this November. Events, love story, gallery, RSVP, venue and travel details for the wedding celebration.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -48,11 +46,10 @@ export const Route = createFileRoute("/")({
           eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           eventStatus: "https://schema.org/EventScheduled",
           description,
-          organizer: { "@type": "Organization", name: "Theplanify" },
           location: {
             "@type": "Place",
             name: venue.name,
-            address: { "@type": "PostalAddress", streetAddress: venue.address, addressLocality: "Jaipur", addressCountry: "IN" },
+            address: { "@type": "PostalAddress", streetAddress: venue.address, addressLocality: "Islamabad", addressCountry: "PK" },
           },
         }),
       },
@@ -76,8 +73,6 @@ function Index() {
         <Rsvp />
         <Venue />
         <Family />
-        <DressCode />
-        <Travel />
         <Faqs />
         <Guestbook />
       </main>

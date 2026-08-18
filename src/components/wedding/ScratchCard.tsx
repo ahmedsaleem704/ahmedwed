@@ -102,7 +102,7 @@ export function ScratchCard() {
               <p className="mt-2 text-lg tracking-[0.2em] uppercase text-foreground sm:text-xl">
                 {couple.weddingDateLabel}
               </p>
-              <p className="mt-1 text-sm text-muted-foreground">Rambagh Heritage Palace, Jaipur</p>
+              <p className="mt-1 text-sm text-muted-foreground">Ahmed Home, Islamabad</p>
             </div>
             <canvas
               ref={canvasRef}
