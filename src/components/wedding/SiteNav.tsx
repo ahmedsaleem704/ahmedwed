@@ -34,7 +34,7 @@ export function SiteNav() {
       <nav aria-label="Primary" className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#home" className="flex items-center gap-2">
           <Heart className="h-4 w-4 text-primary" fill="currentColor" />
-          <span className="script text-2xl leading-none text-gold">V &amp; R</span>
+          <span className="script text-2xl leading-none text-gold">A &amp; A</span>
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">

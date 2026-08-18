@@ -1,5 +1,5 @@
 import { ChevronDown, Sparkles } from "lucide-react";
-import { brand, couple } from "@/data/wedding";
+import { couple } from "@/data/wedding";
 import { FloralCorner } from "./primitives";
 
 export function Hero() {
@@ -31,7 +31,7 @@ export function Hero() {
           <div className="gold-rule my-6 w-48 md:mx-0 mx-auto" />
 
           <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground">
-            {couple.weddingDateLabel} · Jaipur, India
+            {couple.weddingDateLabel} · Islamabad, Pakistan
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
@@ -47,12 +47,6 @@ export function Hero() {
             >
               RSVP Now
             </a>
-          </div>
-
-          <div className="glass mt-10 inline-block rounded-3xl px-6 py-4 text-center md:text-left">
-            <p className="text-lg font-semibold tracking-wide text-foreground">{brand.name}</p>
-            <p className="text-xs text-muted-foreground">{brand.descriptor}</p>
-            <p className="mt-1 text-xs tracking-[0.3em] uppercase text-gold">{brand.status}</p>
           </div>
         </div>
 
