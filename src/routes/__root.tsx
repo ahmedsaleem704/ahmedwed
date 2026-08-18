@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ahmed & Aqsa — Wedding | Theplanify" },
+      { title: "Ahmed & Aqsa — Wedding | 2 November 2026" },
       {
         name: "description",
         content:
-          "The wedding of Ahmed & Aqsa, Jaipur, October 2026. Planned by Theplanify.",
+          "The wedding of Ahmed & Aqsa, Islamabad, Pakistan, 2 November 2026.",
       },
-      { property: "og:site_name", content: "Theplanify" },
+      { property: "og:site_name", content: "Ahmed & Aqsa" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
